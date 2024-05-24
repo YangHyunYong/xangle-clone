@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container-style {
+        @apply p-4;
+    }
+
+    .nav-button-style {
+        @apply px-2 py-4 my-[-16px] text-[14px] font-bold;
+    }
+
+}
