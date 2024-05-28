@@ -37,7 +37,7 @@ const List: FC = () => {
               name={"비트코인"}
               total={"94,286,846,21"}
               price={"5,029.54"}
-              percent={"-1.38%"}
+              percent={"-1.38"}
             ></ListItem>
             <ListItem
               image={"2"}

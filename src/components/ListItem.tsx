@@ -29,7 +29,7 @@ const ListItem: FC<ListItemProps> = ({
         <div className="flex gap-2 items-center">
           <div className="text-xangle-gray-100">₩ {total}</div>
           <div className="flex items-center rounded-sm bg-xangle-green-50 text-xangle-green-75 font-bold text-[12px] mr-1 px-2 py-1 w-fit h-[24px]">
-            -3.97%
+            {percent}%
           </div>
         </div>
       </td>

@@ -1,11 +1,27 @@
 import { FC } from "react";
 import TagButton from "./TagButton";
 import ResearchItem from "./ResearchItem";
+import ResearchCard from "./ResearchCard";
+import { CgChevronRight } from "react-icons/cg";
 
 const Research: FC = () => {
   return (
-    <div className="pt-2">
-      <div className="h-[177px] bg-slate-500"></div>
+    <div className="pt-1">
+      <div className="h-[177px] flex">
+        <div className="flex-1 flex gap-4 ">
+          <ResearchCard
+            image="1"
+            title="주요국 가상자산 규제 방향과 시사점"
+          ></ResearchCard>
+          <ResearchCard
+            image="2"
+            title="[Weekly Xangle] 연이은 호재에 급등한 이더리움"
+          ></ResearchCard>
+        </div>
+        <div className="flex items-center">
+          <CgChevronRight className="size-5"></CgChevronRight>
+        </div>
+      </div>
       <div className="flex gap-1 pt-2">
         <TagButton name="전체" selected={true}></TagButton>
         <TagButton name="게임"></TagButton>

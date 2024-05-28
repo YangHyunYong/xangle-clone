@@ -17,8 +17,12 @@ const App: FC = () => {
           <Divider type={"b"} />
           <LandingBody />
         </div>
-        <Ticker />
+        {/* <Ticker /> */}
+        <Divider type={"b"}></Divider>
         <Footer />
+      </div>
+      <div className="w-12 h-12 fixed bottom-14 right-6">
+        <img src="./telegram_icon.svg" alt="tele" />
       </div>
     </ChakraProvider>
   );
