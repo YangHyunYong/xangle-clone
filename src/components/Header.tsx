@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { CgSearch, CgChevronDown, CgMenu } from "react-icons/cg";
 
 const Header: FC = () => {

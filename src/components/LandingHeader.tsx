@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import ChartInfo from "./ChartInfo";
 
 const LandingHeader: FC = () => {
