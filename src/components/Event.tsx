@@ -73,6 +73,9 @@ const Event: FC = () => {
         name={"지케이싱크"}
         date={"2024.05.28"}
       ></EventItem>
+      <div className="h-10 p-2 mt-2 flex justify-center text-[16px] font-bold">
+        더 보기
+      </div>
     </div>
   );
 };

@@ -13,6 +13,7 @@ export default {
         },
         "xangle-token": "#00c0ff",
         "xangle-gray": {
+          25: "#0000400d",
           50: "#00004066",
           75: "#878f9b",
           100: "#000040cc",
