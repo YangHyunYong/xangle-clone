@@ -5,7 +5,7 @@ import ResearchItem from "./ResearchItem";
 const Research: FC = () => {
   return (
     <div className="pt-2">
-      <div className="h-[177px] bg-slate-500">케러셀</div>
+      <div className="h-[177px] bg-slate-500"></div>
       <div className="flex gap-1 pt-2">
         <TagButton name="전체" selected={true}></TagButton>
         <TagButton name="게임"></TagButton>

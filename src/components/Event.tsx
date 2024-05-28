@@ -1,11 +1,107 @@
 import { FC } from "react";
 import Divider from "./Divider";
 import EventItem from "./EventItem";
+import { CgChevronLeft, CgChevronRight } from "react-icons/cg";
 
 const Event: FC = () => {
   return (
     <div className="flex flex-col gap-2">
-      <div className="h-[200px] bg-slate-400">캘린더</div>
+      <div className="h-[200px] ">
+        <div className="h-10 flex justify-between items-center mb-2">
+          <div className="flex gap-4 items-center text-[16px] font-bold">
+            <div>2024년 5월</div>
+            <div className="bg-xangle-main-200 text-white flex justify-center items-center p-2 rounded-lg">
+              오늘
+            </div>
+          </div>
+          <div className="flex ">
+            <div className="w-10 h-10 flex items-center justify-center">
+              <CgChevronLeft className="size-5" />
+            </div>
+            <div className="w-10 h-10  flex items-center justify-center">
+              <CgChevronRight className="size-5" />
+            </div>
+          </div>
+        </div>
+        <Divider type={"b"}></Divider>
+        <div className="flex h-[136px]">
+          <div className="flex-1 mt-2 flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center">
+              <div className="text-xangle-blue p-2 text-[12px] ">토</div>
+              <div className="p-2 flex flex-col justify-center items-center">
+                <div className="text-[24px] px-2 py-1">25</div>
+                <div className="w-1 h-1 m-1 text-xangle-main-200 font-bold pb-6">
+                  .
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 mt-2 flex items-center justify-center">
+            <div className="flex-1 flex flex-col items-center justify-center">
+              <div className="text-xangle-red-150 p-2 text-[12px] ">일</div>
+              <div className=" p-2 flex flex-col justify-center items-center">
+                <div className="text-[24px] px-2 py-1">26</div>
+                <div className="w-1 h-1 m-1 text-xangle-main-200 font-bold pb-6">
+                  .
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 mt-2 flex items-center justify-center">
+            <div className="flex-1 flex flex-col items-center justify-center">
+              <div className="text-xangle-gray-75 p-2 text-[12px] ">월</div>
+              <div className=" p-2 flex flex-col justify-center items-center">
+                <div className="text-[24px] px-2 py-1">27</div>
+                <div className="w-1 h-1 m-1 text-xangle-main-200 font-bold pb-6">
+                  .
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 mt-2 flex items-center justify-center">
+            <div className="flex-1 flex flex-col items-center justify-center">
+              <div className="text-xangle-main-200 p-2 text-[12px] ">오늘</div>
+              <div className="bg-xangle-main-200 rounded-lg p-2 flex flex-col justify-center items-center">
+                <div className="text-[24px] text-white px-2 py-1">28</div>
+                <div className="w-1 h-1 m-1 text-white font-bold pb-6">.</div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 mt-2 flex items-center justify-center">
+            <div className="flex-1 flex flex-col items-center justify-center">
+              <div className="text-xangle-gray-75 p-2 text-[12px] ">수</div>
+              <div className=" p-2 flex flex-col justify-center items-center">
+                <div className="text-[24px] text-xangle-gray-75 px-2 py-1">
+                  29
+                </div>
+                <div className="w-1 h-1 m-1 text-xangle-main-200 font-bold pb-6"></div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 mt-2 flex items-center justify-center">
+            <div className="flex-1 flex flex-col items-center justify-center">
+              <div className="text-xangle-gray-75 p-2 text-[12px] ">목</div>
+              <div className=" p-2 flex flex-col justify-center items-center">
+                <div className="text-[24px] text-xangle-gray-75 px-2 py-1">
+                  30
+                </div>
+                <div className="w-1 h-1 m-1 text-xangle-main-200 font-bold pb-6"></div>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 mt-2 flex items-center justify-center">
+            <div className="flex-1 flex flex-col items-center justify-center">
+              <div className="text-xangle-gray-75 p-2 text-[12px] ">금</div>
+              <div className=" p-2 flex flex-col justify-center items-center">
+                <div className="text-[24px] px-2 py-1">31</div>
+                <div className="w-1 h-1 m-1 text-xangle-main-200 font-bold pb-6">
+                  .
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Divider type={"b"}></Divider>
       <EventItem
         type={"토큰"}
