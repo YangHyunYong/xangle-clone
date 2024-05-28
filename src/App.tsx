@@ -10,7 +10,7 @@ const App: FC = () => {
       <Header />
       <div className="flex flex-col h-[979px] p-4 gap-4 justify-start">
         <LandingHeader />
-        <Divider />
+        <Divider type={"b"} />
         <LandingBody />
       </div>
     </div>

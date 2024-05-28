@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "md-lg": "840px",
+      },
       colors: {
         "xangle-main": {
           100: "#8000ff1a",
@@ -34,5 +37,13 @@ export default {
       sans: ["Inter", "Noto Sans KR", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".flex-2-1-0": {
+          flex: "2 1 0%",
+        },
+      });
+    },
+  ],
 };

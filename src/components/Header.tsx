@@ -3,7 +3,7 @@ import { CgSearch, CgChevronDown, CgMenu } from "react-icons/cg";
 
 const Header: FC = () => {
   return (
-    <header className="flex justify-between p-4 w-full h-[72px] border-b sticky top-0">
+    <header className="flex justify-between p-4 w-full h-[72px] bg-white border-b sticky top-0">
       <div className="mr-4">
         <img src="/logo.svg" alt="logo" className="w-[147px] h-full" />
       </div>
