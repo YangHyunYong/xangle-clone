@@ -4,7 +4,6 @@ import LandingHeader from "./components/LandingHeader";
 import Divider from "./components/Divider";
 import LandingBody from "./components/LandingBody";
 import { ChakraProvider } from "@chakra-ui/react";
-import Ticker from "./components/Ticker";
 import Footer from "./components/Footer";
 
 const App: FC = () => {
@@ -17,7 +16,6 @@ const App: FC = () => {
           <Divider type={"b"} />
           <LandingBody />
         </div>
-        {/* <Ticker /> */}
         <Divider type={"b"}></Divider>
         <Footer />
       </div>
